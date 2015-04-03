@@ -1,4 +1,17 @@
-call pathogen#infect()
+set rtp+=~/.vim/bundle/Vundle.vim
+
+" Vundle
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'altercation/vim-colors-solarized'
+call vundle#end()
+
+let mapleader = ","
+nmap <leader>ne :NERDTree<cr>
+
 syntax on
 colorscheme solarized
 
@@ -9,13 +22,14 @@ set ignorecase
 set hlsearch
 set tabstop=2
 set shiftwidth=2
+set colorcolumn=100
 
 set backupdir=~/.tmp
 
 au BufRead,BufNewFile *.rb,*erb,*.yml set shiftwidth=2
 au BufRead,BufNewFile *.rb,*erb,*.yml set tabstop=2
-au BufRead,BufNewFile *.java set shiftwidth=4
-au BufRead,BufNewFile *.java set tabstop=4
+au BufRead,BufNewFile *.py,*.java set shiftwidth=4
+au BufRead,BufNewFile *.py,*.java set tabstop=4
 
 set expandtab
 :map <D-y> <C-w><C-w>
