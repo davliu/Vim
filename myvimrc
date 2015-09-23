@@ -37,3 +37,6 @@ set expandtab
 :map <C-k> <C-W>k
 :map <C-h> <C-W>h
 :map <C-l> <C-W>l
+
+let mapleader = "\<Space>"
+nmap <leader>ne :NERDTree<cr>
