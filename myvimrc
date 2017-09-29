@@ -8,9 +8,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Bundle 'altercation/vim-colors-solarized'
-Plugin 'wincent/command-t'
 " Use system ruby to build if using rvm. It won't work even if ruby rvm version same as Vim version.
 " make clean && /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby extconf.rb && make
+Plugin 'wincent/command-t'
 Plugin 'timothycrosley/isort'
 call vundle#end()
 
@@ -82,6 +82,8 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_html_checkers = ['']
 let g:syntastic_javascript_checkers = ['']
-let g:syntastic_python_flake8_args = '--ignore="E501,E302,E261,E701,E241,E126,E127,E128,W801,F403,E711,E712"'
+let g:syntastic_python_flake8_args = '--ignore="E501,E302,E261,E701,E241,E126,E127,E128,W801,F403,E711,E712,E402"'
 hi SpellBad ctermfg=198
 hi SpellCap ctermfg=198
+
+let g:CommandTWildIgnore=&wildignore . ",*.pyc"
