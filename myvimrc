@@ -9,6 +9,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Bundle 'altercation/vim-colors-solarized'
 Plugin 'wincent/command-t'
+" Use system ruby to build if using rvm. It won't work even if ruby rvm version same as Vim version.
+" make clean && /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby extconf.rb && make
 Plugin 'timothycrosley/isort'
 call vundle#end()
 
