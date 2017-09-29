@@ -6,7 +6,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'vim-airline/vim-airline'
 Bundle 'altercation/vim-colors-solarized'
 Plugin 'wincent/command-t'
 Plugin 'timothycrosley/isort'
